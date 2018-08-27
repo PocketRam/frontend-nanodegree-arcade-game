@@ -55,7 +55,7 @@ class Player {
         // Check for collision if game is not won
         } else {
             for(let bug of allEnemies) {
-                if (this.y === bug.y && (bug.x + 25 > this.x && bug.x < this.x + 25)) {
+                if (this.y === bug.y && (bug.x + 50 > this.x && bug.x < this.x + 50)) {
                     $('#loseModal').modal('show');
                     this.reset();
                 }
